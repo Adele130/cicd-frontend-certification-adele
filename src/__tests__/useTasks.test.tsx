@@ -1,7 +1,6 @@
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import React from 'react';
 import { useTasks } from '../hooks/useTasks';
 
 vi.mock('../api/taskApi', () => ({
