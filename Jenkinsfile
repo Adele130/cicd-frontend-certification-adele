@@ -4,8 +4,7 @@ pipeline {
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials-adele')
         DOCKER_IMAGE = "adele1304/tasklist-frontend"
-        SONAR_TOKEN = credentials('sonarqube-token-frontend')
-    }
+SONAR_TOKEN = credentials('sonarqube-token')    }
 
     stages {
         stage('Checkout') {
